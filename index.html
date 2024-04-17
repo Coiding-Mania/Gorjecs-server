@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dashboard | Server</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="icon" type="image/webp" href="https://i.ibb.co/z4T7w5F/4f4aa1623cd65719d2c60f506ea5bb74.webp">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="ishop.html">Shop</a></li>
+            <li><a href="#ip-container" onclick="scrollToSection('ip-container')">Ip</a></li>
+            <li><a href="#slideshow-container" onclick="scrollToSection('slideshow-container')">Preview</a></li>
+            <li><a href="#footer-content" onclick="scrollToSection('footer-content')">Contact</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br><br><br>
+    <a href="https://discord.gg/fuuUv9Rekp" target="_blank">
+        <img src="https://i.ibb.co/z4T7w5F/4f4aa1623cd65719d2c60f506ea5bb74.webp" alt="image of ur dc" class="logo">
+    </a>
+    <a href="https://discord.gg/ZfkvwrhmjB" target="_blank">
+        <img src="https://cdn.discordapp.com/icons/1168468544174952458/0f68054b9a30627353cea2505b2dc8ea.webp?size=1024&format=webp&width=0&height=281" alt="image of ur dc" class="logo2">
+    </a>
+    <h1>We <br>Welcome You Here!</h1><br><br>
+    <br><br>
+    <p>This is Official page for our Minecraft Server </p>
+    <div class="button-container">
+        <a href="https://discord.gg/fuuUv9Rekp" id="discord-button" class="discord-button">Discord</a>
+        <a href="https://aternos.org" id="discord-button" class="discord-button">Host</a>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+    </div>
+</header>
+
+<div class="ip-container" id="ip-container">
+    <div class="ip-address">gmpixel.aternos.me:15280</div>
+    <button class="copy-button">Copy</button>
+</div>
+
+<br><br><br><br>
+<div class="intro">
+    <h2 class="text-center" style="color: var(--text-color);">Features</h2>
+</div>
+<br>
+<br>
+<div class="row justify-content-center features">
+    <div class="col-sm-6 col-md-5 col-lg-4 item">
+        <div id="features" class="box"><i class="fa fa-bolt icon" style="color: var(--main-color);"></i>
+            <h3 class="name">Fast</h3>
+            <p class="description" style="color: var(--secondary-text-color);"><em>No Lagg</em><br></p>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-5 col-lg-4 item">
+        <div id="features" class="box"><i class="fa fa-lock icon" style="color: var(--main-color);"></i>
+            <h3 class="name">Secure</h3>
+            <p class="description" style="color: var(--secondary-text-color);"><em>Your Account is safe with our <b>login pluglin</b><br></p>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-5 col-lg-4 item">
+        <div id="features" class="box"><i class="fa fa-smile-o icon" style="color: var(--main-color);"></i>
+            <h3 class="name">Happy Users</h3>
+            <p class="description" style="color: var(--secondary-text-color);"><em><i>Friendly Community</i></em><br></p>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<h2> Images</h2>
+<br><br><br>
+<div class="slideshow-container" id="slideshow-container"  style="max-width: 9900px; margin: auto; text-align: center; position: relative;">
+    <div class="mySlides fade">
+        <img src="https://i.ibb.co/Z2rd52F/2024-04-14-22-01-57.png" style="width:50%" border-radius="40px">
+    </div>
+    <div class="mySlides fade">
+        <img src="https://i.ibb.co/d2sSWCV/2024-04-14-22-02-26.png" style="width:50%">
+    </div>
+    <div class="mySlides fade">
+        <img src="https://i.ibb.co/vD7TXqz/2024-04-14-22-01-37.png" style="width:50%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)" style="left: 0;">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)" style="right: 0;">&#10095;</a>
+</div>
+<br><br><br>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000);
+    }
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+</script>
+
+<footer id="footer-content">
+    <div class="footer-content">
+        <h4 class="made-by">Made By Skypop18</h4>
+        <div class="social-icons">
+            <a href="https://discord.gg/f8VnRjwk7w" class="social-icon"><i class="fa fa-Discord">Discord</i></a><br>
+            <a href="https://discord.gg/fuuUv9Rekp" class="social-icon"><i class="fa fa-twitter">Help & Support</i></a><br>
+            <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var madeByElements = document.getElementsByClassName('made-by'); // Corrected class name here
+                    if (madeByElements.length > 0) {
+                        // Assuming there's only one element with class "made-by"
+                        madeByElements[0].addEventListener('click', function() {
+                            window.location.href = 'https://www.instagram.com/_sky_ak47/';
+                        });
+                    } else {
+                        console.error('Element with class "made-by" not found.'); // Corrected error message here
+                    }
+                });
+            </script>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

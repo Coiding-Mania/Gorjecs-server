@@ -1,0 +1,344 @@
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior:smooth;
+}
+
+body{
+    background-image: url('https://imgs.search.brave.com/3vC1yMwHYanlnHBpQj5Qe2SGgpKpCG3HQaopvhVfR6w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ0/NzA4NzM3MS9waG90/by9tb2Rlcm4tYWJz/dHJhY3QtZGFyay1n/cmF5LWJhY2tncm91/bmQud2VicD9iPTEm/cz0xNzA2NjdhJnc9/MCZrPTIwJmM9MWhl/cTZ3R1dhYWRZU21Y/LWs5U3NtY1NUbkhh/Ql81aDNfU2t0ZHha/bVBaRT0');
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+header {
+    background-image: url('https://files.shapes.inc/a3483652.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 50px 20px;
+    margin: 0px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(161, 27, 27);
+    text-align: center;
+    font-size: 39px;
+    font-family: 'Pacifico', cursive; 
+    font-style: italic;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 
+    30px #fff, 0 0 40px #0ff, 0 0 70px #0ff, 0 0 
+    80px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+    font-size: 42px;
+    text-decoration: underline;
+    text-decoration-color: #3e5c63;
+    animation: fade 3s ease 0s;
+    pointer-events: none;
+} 
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h2{
+    color: rgb(230, 194, 78);
+    text-align: center;
+    font-size: 35px;
+}
+
+h4{
+    color: gold;
+    position: absolute;
+    right: 5%;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+}
+
+p {
+    color: rgb(101, 170, 10) ;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    animation: fade 3s ease 0s;
+    pointer-events: none;
+} 
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    position:static;
+    bottom: 0;
+    width: 100%;
+    background: rgb(0, 0, 0); /* Adjust color as needed */
+    color: white; /* Adjust text color as needed */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+
+.footer-content {
+    display: flex;
+}
+
+.made-by {
+    margin: 0;
+}
+
+.social-icons {
+    margin-left: 20px;
+}
+
+.social-icon {
+    position: relative;
+    left:5px;
+    display: inline-block;
+    margin: 0 5px;
+    color: #5e0909;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+.Host-button, .discord-button {
+    position: relative;
+    top: 87px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 10px; 
+    transition: 0.9s;
+}
+
+.Host-button, .discord-button:hover{
+    background-color: rgb(175, 36, 36);
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    opacity: 0.1;
+}
+.logo2{
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+.logo{
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+
+.logo:hover {    
+    border: 2px solid red;
+    transition: 0.2s;
+}
+
+.logo2:hover {
+    border: 2px solid white;
+    transition: 0.2s;
+}
+
+.ip-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.ip-address {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 8px 0 0 8px;
+}
+
+.copy-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff8c00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #ff9900;
+    --secondary-color: #222;
+    --text-color: #f80000;
+    --secondary-text-color: #ccc;
+    --background: #f8f9fa;
+    --inner-background: #808080;
+}
+
+.intro h2 {
+    color: var(--text-color);
+}
+
+.features {
+    justify-content: center;
+    color: #0056b3;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.box {
+    text-align: center;
+    background-color: var(--inner-background);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 450px; 
+    margin: 0 auto;
+}
+
+.icon {
+    color: var(--main-color);
+}
+
+.name{
+    color: rgb(212, 146, 22);
+}
+
+.description {
+    color: var(--secondary-text-color);
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.mySlides {
+    display: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fadeInOut 5s infinite;
+}
+
+.mySlides:hover {
+    border-color: #000000;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
